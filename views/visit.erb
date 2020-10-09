@@ -18,7 +18,7 @@
     <input name="user_phone" type="text" class="form-control " placeholder="your phone" value="<%= @user_phone %>">
 
     <label for="exampleInputEmail1">Date and time</label>
-    <input name="date_time" type="text" class="form-control "  placeholder="date" value="<%= @date_time %>">
+    <input id="datetimepicker" name="date_time" type="text" class="form-control "  placeholder="date" value="<%= @date_time %>">
 
   </div>
   <select name='choice_barber' class="form-control">
@@ -50,8 +50,9 @@
 </form>
 <script type="text/javascript">
 $(function () {
-  $('select[name="colorpicker"]').simplecolorpicker();
-})
+  $('#color').simplecolorpicker();
+  $('#datetimepicker').datetimepicker();
+});
 </script>
 
 

@@ -81,10 +81,15 @@ post '/visit' do
 	)",[1,@user_name,@date_time,@barber,@color]
 
 	erb "name : #{@user_name}; phone : #{@user_phone}; date : #{@date_time} \nChoose barber is #{@choice_barber},\nColor : #{@color}"
-	
+	def get_db
+		return SQLite3::Database.new 'barbershop.db'
+	end
 
 end
 
-def get_db
-	return SQLite3::Database.new 'barbershop.db'
-end
+
+
+
+get '/showusers' do
+	"Hello World"
+  end
