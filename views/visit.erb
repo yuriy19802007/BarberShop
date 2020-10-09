@@ -21,9 +21,9 @@
     <input name="date_time" type="text" class="form-control "  placeholder="date" value="<%= @date_time %>">
 
   </div>
-  <select name='choice_barber'>
-    <option>Jassi Simpson</option>
-    <option>Walter White</option>
+  <select name='choice_barber' class="form-control">
+    <option <%= @choice_barber == 'Jassi Simpson' ? 'selected': " " %>>Jassi Simpson</option>
+    <option <%= @choice_barber == 'Walter White' ? 'selected': " " %>>Walter White</option>
   </select>
    <p>
 
