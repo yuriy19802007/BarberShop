@@ -1,0 +1,31 @@
+name : Lena; phone : 096 297 55 33; date : 14.07
+name : Lena; phone : 096 297 55 33; date : 14.07 
+name : ; phone : ; date :  
+name : admin; phone : 096 297 55 33; date : 14.07 
+Choose barber is Walter Whitename : Jurij; phone : 096 297 55 33; date : 14.07 
+Choose barber is Walter White,
+Color : #a4bdfcname : ; phone : ; date :  
+Choose barber is Jassi Simpson,
+Color : #7bd148name : ; phone : ; date :  
+Choose barber is Jassi Simpson,
+Color : #7bd148name : ; phone : ; date :  
+Choose barber is Jassi Simpson,
+Color : #7bd148name : ; phone : ; date :  
+Choose barber is Jassi Simpson,
+Color : #7bd148name : ; phone : ; date :  
+Choose barber is Jassi Simpson,
+Color : #7bd148name : Jurij; phone : 096 297 55 33; date :  
+Choose barber is Jassi Simpson,
+Color : #7bd148name : ; phone : ; date :  
+Choose barber is Jassi Simpson,
+Color : #7bd148name : Jurij; phone : 096 297 55 33; date : 14.07 
+Choose barber is Jassi Simpson,
+Color : #7bd148name :  rut; phone : 096 297 55 33; date :   
+Choose barber is Jassi Simpson,
+Color : #7bd148name :  rut; phone : 096 297 55 33; date :   
+Choose barber is Jassi Simpson,
+Color : #7bd148name :    Ivan ; phone : 096 297 55 33; date :      
+Choose barber is Jassi Simpson,
+Color : #7bd148name : Lena; phone : 096 297 55 33; date : 14.07 
+Choose barber is Jassi Simpson,
+Color : #7bd148
