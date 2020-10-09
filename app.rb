@@ -5,19 +5,9 @@ require 'sinatra/reloader'
 #require 'pony'
 require 'sqlite3'
 
-configure do
-	@db = SQLite3::Database.new 'barbershop.db'
-	@db.execute 'CREATE TABLE IF NOT EXISTS
-	"users"
-	(
-		"id" INTEGER PRIMARY KEY,
-		"username" TEXT,
-		"datestamp" TEXT,
-		"barber" TEXT,
-		"color" TEXT
-	
-	)'
-end
+
+
+
 
 get '/' do
 	
@@ -72,14 +62,29 @@ post '/visit' do
 	if @error != ''
 		return erb :visit
 	end
+	db = get_db
+	db.execute 'CREATE TABLE IF NOT EXISTS
+	"users"
+	(
+		"id" INTEGER PRIMARY KEY,
+		"username" TEXT,
+		"datestamp" TEXT,
+		
+		"barber" TEXT,
+		"color" TEXT
 	
-	f = File.open './public/users.txt', 'a'
-	f.write "name : #{@user_name}; phone : #{@user_phone}; date : #{@date_time} \nChoose barber is #{@choice_barber},\nColor : #{@color}"
-	f.close
+	)'
+	
+	db.execute "insert into users (id,username,datestamp,barber,color)
+	values(
+		?,?,?,?,?
+	)",[1,@user_name,@date_time,@barber,@color]
 
 	erb "name : #{@user_name}; phone : #{@user_phone}; date : #{@date_time} \nChoose barber is #{@choice_barber},\nColor : #{@color}"
 	
 
 end
 
-
+def get_db
+	return SQLite3::Database.new 'barbershop.db'
+end
